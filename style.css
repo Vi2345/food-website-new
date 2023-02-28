@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline:none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+ text-decoration: none;
+ text-transform: capitalize;
+ color:#ffffff;
+}
+
+
+
+::selection{
+    background-color: var(--main-color);
+    color: var(--light-color);
+
+}
+
+:root{
+    --main-color:#2080daa2;
+    --light-color:#00ff62;
+    --primary-color:#ffd700;
+    --secondary-color:#0000ff;
+     --white:#ffffff;
+    --main-font-size:19px;
+    --sub-heading-font:20px;
+    --main-font-family:'Poppins', sans-serif;
+
+}
+
+::-webkit-scrollbar{
+    width:1rem;
+    height:0.5rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color:transparent;
+}
+
+::-webkit-scrollbar-thumb{
+   background-color:white;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 8.8rem;
+    overflow-x: hidden;
+}
+.align{
+    max-width:1200px;
+    margin: auto;
+    padding: 0 3rem;
+    
+}
+
+.header{
+    position: sticky;
+    top:0;
+    left:0;
+    right:0;
+    background-color:var(--primary-color);
+    z-index: 2;
+}
+
+.header .inline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding:1rem 2rem;
+}
+
+.header .inline .image img{
+    height:7rem;
+    margin-left: 5px;
+}
+
+.header .inline .navbar a{
+    font-size: var(--main-font-size);
+    margin-left: 3rem;
+    font-family:var(--main-font-family);
+    color:var(--white);
+}
+
+.header .inline .navbar a:hover{
+    text-decoration: underline;
+    color:var(--secondary-color);
+}
+
+ .Home-menu .Home {
+    min-height:40rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    background-color:#daa520;
+    gap:1.5rem;
+    margin-top: 10rem;
+}
+
+
+ .Home-menu .Home-content{
+    width:30rem;
+    text-align: center;
+    align-items: center;
+
+}
+ .Home-menu .Home-content h1{
+    font-size:1.6rem;
+    color:var(--white);
+    font-family:var(--main-font-family);
+    color: #ae00ff;
+    text-transform: uppercase;
+
+
+}
+
+ .Home .Home-content p{
+    font-size:var(--sub-heading-font);
+    color:var(--white);
+    font-family:var(--main-font-family);
+    margin-bottom: 1rem;
+
+}
+
+ .Home-menu .Home-content .button {
+    background-color:#ff4500;
+    color:var(--white);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 2;
+
+
+}
+
+ .Home-menu .Home-img img{
+    width:20rem;
+    height:18rem;
+}
+
+
+
+.About {
+    min-height: 40rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+    background-color:#20d99c;
+    margin-top: 15rem;
+}
+
+.About .heading img{
+    width:20rem;
+    height:18rem;
+}
+
+
+.About .About-text h1{
+    text-transform: uppercase;
+    font-size:2rem;
+    font-family:var(--main-font-family);
+    color:#adff2f;
+    margin-bottom:1rem;
+}
+
+.About .About-text h2{
+    font-size:1.8rem;
+    font-family:var(--main-font-family);
+    color:#008000;
+    margin-bottom:1rem;
+}
+
+.About .About-text p{
+    font-size:var(--sub-heading-font);
+    font-family:var(--main-font-family);
+    color:var(--white);
+    line-height: 1;
+    margin-bottom:2rem;
+}
+
+.About .About-text .button{
+    background-color: #ff4500;
+    color:var(--white);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    line-height:2;
+}
+
+.Menu{
+    min-height: 40rem;
+    background-color:#daa520;
+    margin-top: 15rem;
+
+}
+.Menu .menu-text{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.Menu .menu-text h1{
+    font-size: 2rem;
+    color:#000000;
+    font-family:var(--main-font-family);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Menu .menu-text p{
+    font-size:var(--sub-heading-font);
+    font-family:var(--main-font-family);
+    color:var(--white);
+}
+
+
+
+.Menu .box-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap:1.5rem
+}
+
+.Menu .box-container .box{
+    text-align: center;
+    width: 18rem;
+    height: 18rem;
+   
+}
+
+.Menu .box-container .box img{
+    width: 15rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+    background-color: #dc143c;
+    padding: 10px;
+
+}
+
+
+.Menu .box-container .box h1{
+    font-size:1.4rem;
+    font-family:var(--main-font-family);
+    color:#000000;
+    margin-bottom: 1rem
+    
+
+}
+
+.Menu .box-container .box h2{
+    font-size: 1.1rem;
+    font-family:var(--main-font-family);
+    color:var(--secondary-color);
+    margin-bottom:1rem;
+}
+
+.Menu .box-container .box p{
+    font-size:var(--sub-heading-font);
+    font-family:var(--main-font-family);
+    color:var(--white);
+    margin-bottom:1rem;
+    
+}
+
+.Menu .box-container .box i{
+    color: #afeeee;
+    font-size:2rem;
+}
+
+.Services{
+    min-height: 40rem;
+    background-color:#202cda;
+    margin-top: 15rem;
+}
+
+.Services .list{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.Services .list h1{
+    color: #7fffd4;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: var(--main-font-family);
+    text-transform: uppercase;
+    color: #000000;
+
+}
+
+.Services .list p{
+    font-size:var(--sub-heading-font);
+    font-family: var(--main-font-family);
+    color:var(--white);
+}
+
+.Services .service-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap:1.5rem;
+
+}
+.Services .service-container .service-box{
+    text-align: center;
+    width: 18rem;
+    height: 18rem;
+}
+.Services .service-container .service-box img{
+    width: 15rem;
+    height: 10rem;
+    margin-bottom:1rem;
+    background-color: #1eff1e;
+    padding: 10px;
+
+}
+
+.Services .service-container .service-box h1{
+    color: #7fff00;
+    font-size: 1.5rem;
+    font-family: var(--main-font-family);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+}
+
+.Services .service-container .service-box p{
+    color:var(--white);
+    font-size:var(--sub-heading-font);
+    font-family: var(--main-font-family);
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+.Contact{
+    min-height: 35rem;
+    background-color:#daa520;
+    margin-top: 15rem;
+
+}
+
+.Contact .main {
+    text-align: center;
+    margin-bottom:2rem;
+}
+
+.Contact .main h1{
+    font-size: 2rem;
+    font-family: var(--main-font-family);
+    color: #7fffd4;
+    text-transform: uppercase;
+}
+
+.Contact .main-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    gap:2rem;
+}
+
+.Contact .main-container .main-box{
+    text-align: center;
+}
+
+.Contact .main-container .main-box i{
+    font-size: 2.5rem;
+    width: 6rem;
+    height: 6rem;
+    background-color: #ff4500;
+    color: #8b008b;
+    line-height: 6rem;
+    border-radius:50%;
+    margin-bottom:1rem;
+}
+
+.Contact .main-container .main-box h1{
+    font-size: 1.3rem;
+    font-family: var(--main-font-family);
+    font-weight: bold;
+    color:var(--secondary-color);
+    margin-bottom:1rem;
+}
+
+.Contact .main-container .main-box p{
+    font-size:var(--sub-heading-font);
+    color:var(--white);
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+
+.Footer{
+    background-color: #daa520;
+    align-items: center;
+    text-align: center;
+
+
+}
+.Footer .column .content{
+    margin-top: 15%;
+    background-color: #ff8c00;
+    padding: 50px;
+}
+
+.Footer .column .content h1{
+    color: #000000;
+    font-size: 1.8rem;
+    font-family:var(--main-font-family);
+    margin-bottom: 1rem;
+
+}
+
+.Footer .column .content p{
+    color:var(--white);
+    font-size: 1.8rem;
+    font-family: var(--sub-heading-font);
+    margin-bottom: 1rem;
+}
+
+.Footer .column .content .button{
+    background-color: #ff4500;
+    color:var(--white);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    line-height:2;
+}
+
+.Footer .column .credit{
+    margin-top: 2%;
+    color:#202cda;
+    font-size: 1.4rem;
+    font-family: var(--main-font-family);
+}
+
+@media only screen and (min-width:355px) and (max-width:430px)
+{  
+    .header .inline .image img{
+    width: 10rem;
+    height: 8rem;
+}
+.Home-menu .Home{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+
+.Home-menu .Home-content{
+    width: 15rem;
+    text-align: center;
+}
+
+.Home-menu .Home-img img{
+    width: 15rem;
+    height: 13rem;
+}
+
+.About{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+
+.About .heading img{
+    width: 15rem;
+    height: 13rem;
+}
+
+
+.Menu .box-container{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.Menu .box-container .box{
+    width: 15rem;
+    text-align: center;
+}
+
+.Menu .box-container .box img{
+    width: 13rem;
+    height: 10rem;
+    margin-bottom: auto;
+}
+.Menu .box-container .box h1{
+    margin-bottom: auto;
+}
+.Menu .box-container .box h2{
+    margin-bottom: auto;
+}
+
+.Menu .box-container .box p{
+    font-size: 18px;
+    margin-bottom: auto;
+}
+
+
+
+.Menu .box-container .box i{
+    font-size: 2rem;
+}
+
+.Services .service-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+
+.Services .service-container .service-box{
+    width: 15rem;
+    text-align: center;
+}
+
+
+.Services .service-container .service-box img{
+    width: 13rem;
+    height: 10rem;
+    margin-bottom: 5px;
+}
+
+.Services .service-container .service-box h1{
+    margin-bottom: 5px;
+}
+
+.Services .service-container .service-box p{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.Contact .main-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+
+.Contact .main-container .main-box{
+    text-align: center;
+
+}
+   
+}
+    
+    
+    
+
+
+    @media (min-width:460px) and (max-width:580px)
+    {
+        .header .inline .image img{
+            width: 10rem;
+            height: 8rem;
+        }
+
+        .header .inline .navbar{
+            display: grid;
+            align-items: center;
+            margin-right: 5%;
+        }
+        .Home-menu .Home{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            align-items: center;
+        }
+        
+        .Home-menu .Home-content{
+            width: 24rem;
+            text-align: center;
+
+        }
+        
+        .Home-menu .Home-img img{
+            width: 24rem;
+            height: 13rem;
+        }
+
+        .About{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            align-items: center;
+        }
+        
+        .About .heading img{
+            width: 24rem;
+            height: 13rem;
+        }
+        .Menu .box-container{
+            display:grid;
+            grid-template-columns: repeat(1,1fr);
+            align-items: center;
+        }
+        
+        .Menu .box-container .box{
+            width: 24rem;
+            text-align: center;
+        }
+        .Menu .box-container .box img{
+            width: 16rem;
+            height: 8rem;
+            margin-bottom: 10px;
+        }
+        .Menu .box-container .box h1{
+            margin-bottom: 10px;
+        }
+
+        .Menu .box-container .box h2{
+            margin-bottom: 10px;
+        }
+        
+        .Menu .box-container .box p{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .Menu .box-container .box i{
+            font-size: 1.5rem;
+        }
+        
+        
+        .Services .service-container{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            align-items: center;
+        }
+        
+        .Services .service-container .service-box{
+            width: 24rem;
+            text-align: center;
+        }
+        
+        
+        .Services .service-container .service-box img{
+            height:10rem;
+            margin-bottom: 10px;
+        }
+        .Services .service-container .service-box h1{
+            margin-bottom: 10px;
+        }
+        
+        .Services .service-container .service-box p{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .Contact .main-container{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            align-items: center;
+        }
+        
+        .Contact .main-container .main-box{
+            text-align: center;
+        
+        }
+
+
+        
+
+    
+        
+        
+        
+    }
+
